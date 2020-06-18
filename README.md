@@ -1,0 +1,2 @@
+# bugsChartScrapy
+tmp
