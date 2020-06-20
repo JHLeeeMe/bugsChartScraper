@@ -196,13 +196,6 @@ df_notnull['ranking'].isna().sum()
 df_notnull.dropna(inplace=True)
 ```
 
-    /home/jhleeeme/.pyenv/versions/3.5.2/envs/jupyter-3.5.2/lib/python3.5/site-packages/ipykernel_launcher.py:4: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame
-    
-    See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-      after removing the cwd from sys.path.
-
-
 ### date, ranking 칼럼으로 정렬도 해줌
 
 
@@ -210,16 +203,6 @@ df_notnull.dropna(inplace=True)
 df_notnull.sort_values(['date', 'ranking'], ascending=[False, True], inplace=True)
 df_notnull.head()
 ```
-
-    /home/jhleeeme/.pyenv/versions/3.5.2/envs/jupyter-3.5.2/lib/python3.5/site-packages/ipykernel_launcher.py:1: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame
-    
-    See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-      """Entry point for launching an IPython kernel.
-
-
-
-
 
 <div>
 <table border="1" class="dataframe">
