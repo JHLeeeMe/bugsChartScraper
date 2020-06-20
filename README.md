@@ -556,15 +556,6 @@ artist_score_df
 ```python
 artist_score_df.plot(kind='bar', figsize=(12, 6), fontsize=15, rot=60)
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7f23803d0ac8>
-
-
-
-
 ![1](https://user-images.githubusercontent.com/31606119/85188664-6e88c980-b2e3-11ea-98c6-2ce4d6dc0885.png)
 
 
@@ -666,15 +657,6 @@ title_score_df
 ```python
 title_score_df.plot(kind='bar', figsize=(12, 6), fontsize=15, rot=70)
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7f237b1de828>
-
-
-
-
 ![2](https://user-images.githubusercontent.com/31606119/85188666-6fb9f680-b2e3-11ea-99eb-b0ea4286e2a9.png)
 
 
@@ -776,15 +758,6 @@ title_count_df
 ```python
 title_count_df.plot(kind='barh', figsize=(12, 6), fontsize=15)
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7f237b160908>
-
-
-
-
 ![3](https://user-images.githubusercontent.com/31606119/85188668-70528d00-b2e3-11ea-8724-e7b69536860a.png)
 
 
@@ -886,15 +859,6 @@ album_score_df
 ```python
 album_score_df.plot(kind='bar', figsize=(12, 6), fontsize=15, rot=65)
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7f23798ffa58>
-
-
-
-
 ![4](https://user-images.githubusercontent.com/31606119/85188669-70528d00-b2e3-11ea-85b8-5738b9958fa1.png)
 
 
