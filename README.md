@@ -1,4 +1,6 @@
 # bugsChartScrapy
+1. ```scrapy.py```를 실행하면 벅스뮤직의 데일리차트를 2006년부터 긁어온다.
+2. 긁어온 데이터는 ```./resources/csv/bugsChartScrapy_<실행날짜>.psv```로 저장된다.
 
 # 수집한 데이터를 가지고 뭐라도 좀 해보자. 
 
