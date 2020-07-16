@@ -22,7 +22,7 @@ def get_date_list():
             break
     return date_list[:-2]
 
-def scrape(date):
+def scrap(date):
     url = 'https://music.bugs.co.kr/chart/track/day/total?chartdate=' + date
     res = requests.get(url)
     html = res.text
@@ -61,7 +61,7 @@ def scrape(date):
         list_album.append(sub_album)
 
     today = datetime.today().strftime('%Y%m%d')
-    my_file_path = './resources/csv/bugsChartScrapy_' + today + '.csv'
+    my_file_path = './resources/csv/bugsChartScrap_' + today + '.csv'
     print(date)
 
     with open(my_file_path, 'a') as f:
@@ -71,4 +71,4 @@ def scrape(date):
 
 if __name__ == '__main__':
      with Pool(processes=12) as p:
-         p.map(scrape, get_date_list())
+         p.map(scrap, get_date_list())
