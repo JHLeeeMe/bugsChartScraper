@@ -9,7 +9,7 @@ def get_date_list():
     url = 'https://music.bugs.co.kr/chart/track/day/total?chartdate=0'
     res = requests.get(url)
     html = res.text
-    soup = BeautifulSoup(html, 'lxml', from_encoding='utf8')
+    soup = BeautifulSoup(html, 'lxml')
 
     curr_date = str(soup.find('time')).split('\n')[2].replace('\t', '').replace('\r', '')  # 현재 page의 date
     date_list = []
