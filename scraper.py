@@ -22,6 +22,7 @@ def get_date_list():
             break
     return date_list[:-2]
 
+
 def scrap(date):
     url = 'https://music.bugs.co.kr/chart/track/day/total?chartdate=' + date
     res = requests.get(url)
@@ -66,9 +67,9 @@ def scrap(date):
 
     with open(my_file_path, 'a') as f:
         for ranking, title, artists, album in zip(list_ranking, list_title, list_artists, list_album):
-            f.write(ranking + '|' + title + '|' + artists + '|' + album  + '|' + date + '\n')
+            f.write(ranking + '|' + title + '|' + artists + '|' + album + '|' + date + '\n')
 
 
 if __name__ == '__main__':
-     with Pool(processes=12) as p:
-         p.map(scrap, get_date_list())
+    with Pool(processes=12) as p:
+        p.map(scrap, get_date_list())
