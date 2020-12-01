@@ -565,7 +565,6 @@ artist_score_df.plot(kind='bar', figsize=(12, 6), fontsize=15, rot=60)
 
 
 ```python
-# Title 점수 TOP10
 sql_title_score = """
     select artist, title, sum(score)
       from bugsChart_tb
