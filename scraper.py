@@ -1,8 +1,9 @@
-import requests
-from bs4 import BeautifulSoup
+from multiprocessing import Pool
 from dateutil.parser import parse
 from datetime import datetime, timedelta
-from multiprocessing import Pool
+
+import requests
+from bs4 import BeautifulSoup
 
 
 def get_date_list():
